@@ -6,15 +6,8 @@ public:
             if(n==ans){
                 return true;
             }
-            else{
-                if(ans > n){
-                    break;
-                }
-                else{
-                    if(ans < INT_MAX/2){
-                        ans = ans *2;
-                    }
-                }
+            if(ans < INT_MAX/2){
+                ans = ans *2;
             }
 
         }
